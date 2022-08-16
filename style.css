@@ -1,0 +1,109 @@
+.app{
+    background-color: #60a779;
+    color: white;
+    padding: 1em;
+    font-family: 'Familjen Grotesk', sans-serif;
+    padding: 0em;
+    margin: 0em;
+}
+
+p{
+    margin-bottom: 0em;
+}
+
+
+/* HEader stuff */
+.header{
+    padding: 1em 1.4em;
+}
+
+#logo-row{
+    padding-top: 0.7em;
+    width: 1.3em;
+}
+
+#checkin-text{
+    padding: 0em 0em 0em 1em;
+    font-size: 1.6em;
+}
+
+#x-logo {
+    filter: invert(1);
+}
+
+/* Middle Part with profile pic */
+.middle{
+    margin: 5em;
+}
+
+.circle{
+    width: 12em;
+    margin: 0 auto;
+}
+
+#profil-picture{
+    border-radius: 50%;
+}
+
+/* Profile Text */
+.check-row{
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#checkin-counter{
+    font-size: 1.2em;
+    margin-bottom: 0.01em;
+}
+
+#name{
+    font-size: 2.2em;
+}
+#memberID {
+    font-size: 0.8em;
+}
+
+
+/* Footer */
+.footer{
+    background-color: white;
+    color:black;
+}
+#location-img{
+    margin: 1em;;
+    width: 5em;
+}
+
+.footer-text{
+    margin-top: 0.5em;
+}
+
+#activity{
+    font-weight: 700;
+}
+
+#datetime {
+    font-weight: 200;
+}
+
+#share{
+    margin-left: 2em;
+}
+
+#location-icon{
+    width: 1.2em;
+    padding-right: 0.3em;
+}
+
+#tag-icon{
+    padding-right: 0.3em;
+    width: 0.8em;
+}
+
+#footer-button{
+    color: #336ec7;
+    border-color: #336ec7;
+    margin: 1em 2em;
+    width: 30em;
+    font-size: 1.1em;
+}

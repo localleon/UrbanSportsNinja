@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk&display=swap" rel="stylesheet">
+
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+
+    <title>UrbanSportsClub</title>
+</head>
+
+<body>
+
+    <div class="app container">
+
+        <div class="header row">
+            <div class="float-left" id="logo-row">
+                <img src="img/cross.png" alt="" id="x-logo">
+            </div>
+            <div class="float-left">
+                <p id="checkin-text">Du bist eingecheckt</p>
+            </div>
+        </div>
+
+        <div class="middle">
+            <div class="circle">
+                <img src="img/profil-pic.jpg" alt="" id="profil-picture">
+            </div>
+    
+                
+            <div class="check-row">
+                <p id="checkin-counter">Eingecheckt: 00:00 minutes ago</p>
+                <p id="name">Leon Rauschenbach</p>
+                <p id="memberID">M Mitgliedschaftsnummer: 792467231</p>
+            </div>
+        </div>
+
+
+
+        <div class="footer">
+            <div class="row">
+                <div class="float-left">
+                    <img src="img/activity-swimming.png" alt="" id="location-img">
+                </div>
+
+                <div class="footer-text float-left">
+                    <p id="activity">Schwimmen</p>
+                    <p id="datetime">25 Juni, 15:05</p>
+                    <p id="location-tag"> 
+                        <img src="img/tag.png"id=location-icon>
+                        Lentpark</p>
+                    <p id="tag">
+                        <img src="img/label.png" id="tag-icon">Schwimmen</p>
+                </div>
+            </div>
+
+            <button id="footer-button" class="button-outline button">Teile dein check-in</button>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
