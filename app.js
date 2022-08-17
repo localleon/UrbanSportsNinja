@@ -30,9 +30,8 @@ function setTodaysDate() {
     var strDate = 'D M, H:M'
         .replace('M', today.toLocaleString("de-de", { month: "long" }))
         .replace('D', today.getDate())
-        .replace("H",today.getHours())
-        .replace("M",today.getMinutes());
-
+        .replace("H",pad2(today.getHours()))
+        .replace("M",pad2(today.getMinutes()));
 
     let datetime = document.getElementById("datetime")
     datetime.innerHTML = strDate 
