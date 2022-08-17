@@ -93,10 +93,7 @@ function setProfileName(){
 }
 
 function updateProfilPicture(){
-
-    
     const profileImg = document.getElementById("profile-img").files[0];
-    console.log(profileImg)
 
     const profileImgURL = URL.createObjectURL(profileImg);
     console.log("Updating Profile picture with",profileImgURL)
