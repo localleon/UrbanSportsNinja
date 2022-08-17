@@ -53,8 +53,6 @@ p{
     left: 0;
 }
 
-
-
 #circle-dot{
     position: relative;
     top: 0;
@@ -97,6 +95,16 @@ p{
 
     border-radius: 50%;
 }
+
+/* Config View */
+#config-view {
+    display: none;
+    color: black;
+    background-color: white;
+    margin: 5em auto 0 auto;
+    padding: 2em;
+}
+
 
 /* Profile Text */
 .check-row{
