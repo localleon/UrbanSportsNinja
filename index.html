@@ -1,114 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width; initial-scale=1; viewport-fit=cover"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport"
-    content="width=device-width; initial-scale=1; viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    
     <!-- possible content values for pwa: default, black or black-translucent -->
-    <meta name="apple-mobile-web-app-status-bar-style"
-        content="black-translucent">
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
 
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS Reset -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
 
     <!-- Milligram CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <title>UrbanSportsClub</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="app container">
+      <div class="header float-clear">
+        <div class="float-left" id="logo-row">
+          <img src="img/cross.png" alt="" id="x-logo" />
+        </div>
+        <div class="float-left">
+          <p id="checkin-text">Du bist eingecheckt</p>
+        </div>
+      </div>
 
-        <div class="header float-clear">
-            <div class="float-left" id="logo-row">
-                <img src="img/cross.png" alt="" id="x-logo">
-            </div>
-            <div class="float-left">
-                <p id="checkin-text">Du bist eingecheckt</p>
-            </div>
+      <div class="middle" id="checkin-view">
+        <div class="circle">
+          <img src="img/circle-dotted.png" id="circle-dot" alt="" srcset="" />
+          <img src="img/circle-lines.png" id="circle-lines" alt="" srcset="" />
+          <img src="img/profil-pic.png" alt="" id="profil-picture" />
+          <img src="img/green-icon.png" alt="" id="green-icon" />
         </div>
 
-        <div class="middle" id="checkin-view">
-            <div class="circle">
-                <img src="img/circle-dotted.png" id="circle-dot" alt="" srcset="">
-                <img src="img/circle-lines.png" id="circle-lines" alt="" srcset="">
-                <img src="img/profil-pic.png" alt="" id="profil-picture">
-                <img src="img/green-icon.png" alt="" id="green-icon">
+        <div class="check-row">
+          <p id="checkin-counter">Eingecheckt: 00:00 minutes ago</p>
+          <p id="name">Heike Musterfrau</p>
+          <p id="memberID">M Mitgliedschaftsnummer: 792467231</p>
+        </div>
+      </div>
 
-            </div>
-
-            <div class="check-row">
-                <p id="checkin-counter">Eingecheckt: 00:00 minutes ago</p>
-                <p id="name">Heike Musterfrau</p>
-                <p id="memberID">M Mitgliedschaftsnummer: 792467231</p>
-            </div>
+      <div id="config-view">
+        <p>Aktivitäten</p>
+        <div id="activity-btn">
+          <button
+            onClick="displayActivity(activity_lentpark)"
+            class="button button-outline"
+          >
+            Lentpark
+          </button>
+          <button
+            onClick="displayActivity(activity_stuntwerk)"
+            class="button button-outline"
+          >
+            Stuntwerk
+          </button>
+          <button
+            onClick="displayActivity(activity_justfit)"
+            class="button button-outline"
+          >
+            JustFit Riehl
+          </button>
         </div>
 
-        <div id="config-view">
-            <p>Aktivitäten</p>
-            <div id="activity-btn">
-                <button onClick="displayActivity(activity_lentpark)" class="button button-outline">Lentpark</button>
-                <button onClick="displayActivity(activity_stuntwerk)" class="button button-outline">Stuntwerk</button>
-                <button onClick="displayActivity(activity_justfit)" class="button button-outline">JustFit Riehl</button>
-            </div>
-
-            <div id="name-settings row">
-                <p>Name und Profilbild</p>
-                <input type="text" id="name-field">
-                <input type="file" id="profile-img" accept="image/jpeg, image/png, image/jpg">
-                <button onClick="updateProfile()" id="submit-name">Profil updaten</button>
-
-            </div>
-
-            <div class="settings">
-                <button onClick="displayCheckInView()">Zurück zum Check-In</button>
-            </div>
-
+        <div id="name-settings row">
+          <p>Name und Profilbild</p>
+          <input type="text" id="name-field" />
+          <input
+            type="file"
+            id="profile-img"
+            accept="image/jpeg, image/png, image/jpg"
+          />
+          <button onClick="updateProfile()" id="submit-name">
+            Profil updaten
+          </button>
         </div>
 
-        <div class="footer">
-            <div class="float-clear">
-                <div class="float-left">
-                    <img src="img/activity-swimming.png" alt="" id="location-img">
-                </div>
+        <div class="settings">
+          <button onClick="displayCheckInView()">Zurück zum Check-In</button>
+        </div>
+      </div>
 
-                <div class="footer-text float-left">
-                    <p id="activity">Schwimmen</p>
-                    <p id="datetime">25 Juni, 15:05</p>
-                    <p id="location-tag">
-                        <img src="img/tag.png" id="location-icon">
-                        Lentpark</p>
-                    <p id="tag">
-                        <img src="img/label.png" id="tag-icon">Schwimmen</p>
-                </div>
-            </div>
+      <div class="footer">
+        <div class="float-clear">
+          <div class="float-left">
+            <img src="img/activity-swimming.png" alt="" id="location-img" />
+          </div>
 
-            <button onClick="displayConfigView()" id="footer-button" class="button-outline button">Teile dein
-                check-in</button>
+          <div class="footer-text float-left">
+            <p id="activity">Schwimmen</p>
+            <p id="datetime">25 Juni, 15:05</p>
+            <p id="location-tag">
+              <img src="img/tag.png" id="location-icon" />
+              Lentpark
+            </p>
+            <p id="tag"><img src="img/label.png" id="tag-icon" />Schwimmen</p>
+          </div>
         </div>
 
+        <button
+          onClick="displayConfigView()"
+          id="footer-button"
+          class="button-outline button"
+        >
+          Teile dein check-in
+        </button>
+      </div>
     </div>
-
 
     <!-- Application Logic -->
     <script src="app.js"></script>
-
-</body>
-
+  </body>
 </html>

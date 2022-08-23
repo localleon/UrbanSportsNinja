@@ -1,177 +1,175 @@
-html,body{
-    width: 100%;
-    height: 100%;
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 
-.app{
-    width: 100%;
-    height: 100%;
+.app {
+  width: 100%;
+  height: 100%;
 
-
-    background-color: #60a779;
-    color: white;
-    padding: 1em;
-    font-family: 'Familjen Grotesk', sans-serif;
-    padding: 0em;
-    margin: 0em;
+  background-color: #60a779;
+  color: white;
+  padding: 1em;
+  font-family: "Familjen Grotesk", sans-serif;
+  padding: 0em;
+  margin: 0em;
 }
 
-p{
-    margin-bottom: 0em;
+p {
+  margin-bottom: 0em;
 }
-
 
 /* HEader stuff */
-.header{
-    padding: 1em 1.4em;
+.header {
+  padding: 1em 1.4em;
 }
 
-#logo-row{
-    padding-top: 0.7em;
-    width: 1.3em;
+#logo-row {
+  padding-top: 0.7em;
+  width: 1.3em;
 }
 
-#checkin-text{
-    padding: 0em 0em 0em 1em;
-    font-size: 1.6em;
+#checkin-text {
+  padding: 0em 0em 0em 1em;
+  font-size: 1.6em;
 }
 
 #x-logo {
-    filter: invert(1);
+  filter: invert(1);
 }
 
 /* Middle Part with profile pic */
-.middle{
-    margin: 5em 0em;
+.middle {
+  margin: 5em 0em;
 }
 
-.circle{
-    width: 14em;
-    margin: 0 auto;
-    position: relative;
-    top: 0;
-    left: 0;
+.circle {
+  width: 14em;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
-#circle-dot{
-    position: relative;
-    top: 0;
-    left: 0;
+#circle-dot {
+  position: relative;
+  top: 0;
+  left: 0;
 
-    filter: invert(1);
+  filter: invert(1);
 
-    animation-name: rotate;
-    animation-duration: 60s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    border-radius: 50%;
+  animation-name: rotate;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-radius: 50%;
 }
-@keyframes rotate{
-    from{ transform: rotate(-360deg); }
-    to{ transform: rotate(360deg); }
+@keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-#circle-lines{
-    position: absolute;
-    top: 0;
-    left: 0;
+#circle-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    filter: invert(1);
+  filter: invert(1);
 }
 
 #green-icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-#profil-picture{
-    position: absolute;
-    top: 1.4em;
-    left: 1.6em;
-    width: 11em;
+#profil-picture {
+  position: absolute;
+  top: 1.4em;
+  left: 1.6em;
+  width: 11em;
 
-
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 /* Config View */
 #config-view {
-    display: none;
-    color: black;
-    background-color: white;
-    margin: 5em auto 0 auto;
-    padding: 2em;
+  display: none;
+  color: black;
+  background-color: white;
+  margin: 5em auto 0 auto;
+  padding: 2em;
 }
-
 
 /* Profile Text */
-.check-row{
-    text-align: center;
+.check-row {
+  text-align: center;
 }
 
-#checkin-counter{
-    font-size: 0.9em;
-    margin-bottom: 0.01em;
+#checkin-counter {
+  font-size: 0.9em;
+  margin-bottom: 0.01em;
 }
 
-#name{
-    font-size: 1.2em;
-    font-weight: 600;
+#name {
+  font-size: 1.2em;
+  font-weight: 600;
 }
 #memberID {
-    font-size: 0.8em;
+  font-size: 0.8em;
 }
-
 
 /* Footer */
-.footer{
-    background-color: white;
-    color:black;
-    padding: 0em 0em 1em 1em;
-    width: 100%;
+.footer {
+  background-color: white;
+  color: black;
+  padding: 0em 0em 1em 1em;
+  width: 100%;
 
-
-    position: fixed;
-    left: 0;
-    bottom: 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
 
-.footer-text{
-    margin-top: 0.5em;
+.footer-text {
+  margin-top: 0.5em;
 }
 
-#location-img{
-    margin: 1em 1em 0em 0em;
-    width: 5em;
+#location-img {
+  margin: 1em 1em 0em 0em;
+  width: 5em;
 }
 
-#activity{
-    font-weight: 700;
+#activity {
+  font-weight: 700;
 }
 
 #datetime {
-    font-weight: 200;
+  font-weight: 200;
 }
 
-#share{
-    margin-left: 2em;
+#share {
+  margin-left: 2em;
 }
 
-#location-icon{
-    width: 1.2em;
-    padding-right: 0.3em;
+#location-icon {
+  width: 1.2em;
+  padding-right: 0.3em;
 }
 
-#tag-icon{
-    padding-right: 0.3em;
-    width: 0.8em;
+#tag-icon {
+  padding-right: 0.3em;
+  width: 0.8em;
 }
 
-#footer-button{
-    color: #336ec7;
-    border-color: #336ec7;
-    width: 90%;
-    margin: 2em auto 0em auto;
+#footer-button {
+  color: #336ec7;
+  border-color: #336ec7;
+  width: 90%;
+  margin: 2em auto 0em auto;
 }
